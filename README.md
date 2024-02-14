@@ -11,6 +11,9 @@ Health Check command for AWS Task definition :
 CMD-SHELL,curl -f http://localhost:8080/actuator/health || exit 1
 ```
 
+1. mvn clean install
+2. docker build -t AWS-CICD-Spring-ms .
+3. docker run -p 8080:8080 aws-cicd-spring-ms
 
 Prerequisite :
 1. AWS acconunt.
